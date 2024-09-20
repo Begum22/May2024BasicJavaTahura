@@ -1,14 +1,14 @@
 package constructor;
 
 public class Students {
-	int id;
+	static int id;
 	String firstName;
 	String lastName;
 	
 
 	public Students(int id, String firstName, String lastName) {
 		super();
-		this.id = id;
+		Students.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		
@@ -16,7 +16,8 @@ public class Students {
 	}
 
 	public static void main(String[] args) {
-	
+	 schoolName();
+		
 		Students Salman = new Students(1, "Salman", "Shahriar");
 		 double SalmanseleniumFee=Salman.courseJava(500.00);
 		 double SalmanjavaFee=  Salman.courseSelenium(1000.00);
@@ -40,5 +41,8 @@ public class Students {
 		System.out.println("Java fee "+ fee);
 		return fee;
 	
+	}
+	public static void schoolName() {
+		System.out.println("TEP");
 	}
 }
